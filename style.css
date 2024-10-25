@@ -1,0 +1,517 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Body Header */
+
+#body-header{
+    height: 65vh;
+    background-image: url(assets/PhotoReal_4k_hd_wallpaper_with_islamic_first_kalma_0.jpg);
+    background-size: cover;
+    background-position: center;
+    opacity: 0.8;
+    background-attachment: fixed;
+}
+
+/* Horizontal List Navigation Bar */
+
+.horizontal-list{
+    list-style: none;
+    padding-left: 0px;
+    margin: 0px;
+}
+
+.horizontal-list li{
+    display: inline-block;
+    margin: 0px 8px 8px 0px;
+    font-weight: 100;
+    font-size: 1.5rem;
+}
+
+.horizontal-list li a {
+    color: white;
+    text-decoration: none;
+    
+}
+.nav-menu li a{
+    transition: color 0.5s, border-bottom 0.4s;
+}
+.nav-menu li a:hover {
+    color: lightgray;
+    border-bottom: 1px solid black;
+}
+
+.text-center{
+    text-align: center;
+}
+
+
+
+/* Name and Social Icons */
+
+#name-social-container{
+    margin-top: 20vh;
+}
+#my-name{
+    font-size: 3rem;
+    letter-spacing: 0.1rem;
+    color: white;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+
+.social-icons li a i {
+    padding: 10px;
+    font-size: 1.2rem;
+    border-radius: 50%;
+}
+.social-icons li a i:hover{
+    box-shadow: 0px 0px 6px 4px rgba(163, 118, 4, 0.3);
+}
+
+section{
+    width: 100%;
+    height: 75vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+section:nth-child(2n)
+{
+    background-color:rgb(230, 229, 229);
+}
+
+section:nth-child(2n+1)
+{
+    background-color:white;
+}
+
+.section-heading{
+    width: auto;
+    padding: 20px 10px 10px;
+    /* margin: 10px auto; */
+    font-weight: 400;
+}
+
+.section-heading span{
+    font-size: 40px;
+    color: #2857a4;
+    display: inline-block;
+    padding-top: 10px;
+    margin-right: 0.5rem;
+}
+
+
+/* About Section */
+#about{
+    height: auto;
+    width: 100%;
+    position: relative;
+}
+
+#my-image{
+    height: 12rem;
+    width: 12rem;
+    margin: auto;
+    margin-top: -17vh;
+}
+
+#my-image img{
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;
+    box-shadow: 0px 0px 6px 4px rgba(163, 118, 4, 0.8);
+}
+
+#about-para {
+    padding: 10px;
+    width: 70%;
+    height: 100%;
+    margin: auto;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+    color: grey;
+    line-height: 28px;
+    font-weight: 100;
+    font-size: 1.1rem;
+}
+
+.text-highlight {
+    color: #2857a4;
+    font-weight: 600;
+
+}
+
+
+/* Skills Section*/
+
+.skills-display{
+    width: 70%;
+    height: 20%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    /* border: 2px solid black; */
+}
+
+.skill-progress{
+    width: 7rem;
+    height: 1.4rem;
+    background-color:lightgrey;
+    border-radius: 0.8rem;
+    /* border: 2px solid black; */
+}
+
+.skill-progress>div{
+    border-radius: 20px 0px 0px 20px;
+}
+
+.skill-name span{
+    /* font-size: 0.5rem; */
+    color:rgb(109, 109, 109);
+    margin-left: 10px;
+}
+
+/* Common Margin Classes */
+
+.mb75px{
+    margin-bottom: 75px;
+}
+
+/* Common color classes */
+
+.mb-blue{
+    background-color: #2857a4;
+}
+
+/* Percentage Classes */
+
+.eighty-five-percent{
+    width:85% ;
+    height: inherit;
+}
+
+.sixty-five-percent{
+    background-color: aqua;
+    width:65% ;
+    height: inherit;
+}
+.seventy-percent{
+    background-color:#9cc4b2;
+    width:70% ;
+    height: inherit;
+}
+.fourty-five-percent{
+    background-color:#C98CA7;
+    width:45% ;
+    height: inherit;
+}
+.ninty-five-percent{
+    background-color:#E76D83;
+    width:95% ;
+    height: inherit;
+}
+.ninty-percent{
+    background-color:#68B0AB;
+    width:90% ;
+    height: inherit;
+}
+.sixty-percent{
+    background-color:#054d1b;
+    width:60% ;
+    height: inherit;
+}
+.thirty-five-percent{
+    background-color:#77A2A4;
+    width:35% ;
+    height: inherit;
+}
+.fifty-five-percent{
+    background-color:#384E77;
+    width:55% ;
+    height: inherit;
+}
+.twenty-five-percent{
+    background-color:#b3e420;
+    width:25% ;
+    height: inherit;
+}
+.thirty-percent{
+    background-color:#384E77;
+    width:30% ;
+    height: inherit;
+}
+.fourty-percent{
+    background-color:#18314f;
+    width:40% ;
+    height: inherit;
+}
+
+/* timeline section */
+
+.timeline{
+    position: relative;
+    height: 75vh;
+    width: 75%;
+    overflow-y:auto;
+}
+.timeline::-webkit-scrollbar
+{
+    display: none;
+}
+
+.timeline-box{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    margin: 5px;
+    width: 40%;
+    left: 5%;
+    min-height: 150px;
+    border: 1px solid black;
+}
+.timeline-box:nth-child(2n+1):after{
+    content: "";
+    position: absolute;
+    top: 30%;
+    right: -13.0%;
+    border-radius:50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color:goldenrod;
+    z-index: 1;
+}
+.timeline-box:nth-child(2n):after{
+    content: "";
+    position: absolute;
+    top: 30%;
+    left: -9.3%;
+    border-radius:50%;
+    width: 0.5rem;
+    height: 0.5rem;
+    background-color: goldenrod;
+    z-index: 1;
+}
+.timeline-box.timeline-box:nth-child(2n){
+    left: 53%;
+}
+.timeline-divider{
+    position: absolute;
+    height: 230%;
+    width: 0;
+    border:3px dashed #0096fa6b;
+    top: 10%;
+    left:50%;
+    padding: 0px;
+}
+
+@media screen and (max-width:600px){
+    .timeline-divider{
+        left: 5%;
+        height: 155% !important;
+    }
+    .timeline-box{
+        left:12% !important;
+        width: 80%;
+    }
+    .timeline-box::after{
+        left: -12% !important;
+    }
+    html{
+        font-size: 15px;
+    }
+    
+    
+}
+
+.timeline-traveller {
+    position: sticky;
+    top: 10%;
+    left: 50%;
+    transform: rotate(90deg);
+    color: #18314f;
+    z-index: 2;
+}
+
+.company {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #18314f;
+}
+.job_profile {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color:orange;
+}
+
+/* Portfolio section */
+
+#projects{
+    height: 100%;
+    width: 100%;
+}
+
+.project_container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(320px, 1fr)); 
+    gap: 2rem;
+}
+.grid_item {
+    display: grid;
+    place-items: center ;
+}
+
+.card {
+    width: 100% ;
+    display: flex;
+    flex-direction:column;
+    border-radius: 0.5rem;
+    overflow: hidden;
+    transition: 0.2s ease-in-out;
+}
+.card:hover{
+    transform: scale(1.05);
+    transition: 1s ease-in-out;
+}
+.card:hover img{
+    transform: scale(1.05);
+    transition: 0.3s ease-in-out;
+    opacity: 0.8 ;
+}
+.card_content{
+    padding:2rem ;
+    position: relative;
+    top: -6rem;
+    margin-bottom: -6.5rem;
+    transition: 0.5s ease-in-out;
+    transform: translateY(100px);
+}
+.card:hover .card_content{
+    background:#e6e5e5;
+    color:#384E77;
+    transform: translateY(0px) ;
+}
+
+.card_content h3{
+    text-align: center;
+}
+
+/* Contact Section */
+
+#contact {
+    background-color: #0abcf9;
+    background-image: linear-gradient(50deg, #2857a4 0%, #403066 74%);
+    color: white;
+    padding-bottom: 40px;
+}
+
+#contact h1,
+#contact h1 span {
+    color: white;
+}
+
+#contact-form {
+    margin-left: 20%;
+}
+
+#contact-container {
+    display: flex;
+}
+
+#my-details-container {
+    width: 35%;
+    margin-left: 6%;
+}
+
+#my-details-container h3 {
+    color: white;
+    font-weight: 550;
+    font-size: 1.2rem;
+}
+
+#contact-form-container {
+    width: 50%;
+}
+
+#my-details-container p {
+    color: #d9dcdd;
+    font-size: 0.9rem;
+}
+
+.my-details-info-container {
+    margin-bottom: 20px;
+    color: #d9dcdd;
+    font-size: 1rem;
+}
+
+.my-details-info-container span {
+    margin-left: 0.4rem;
+}
+
+.my-details-info-container i {
+    color: white;
+}
+
+.my-details-icon {
+    width: 1rem;
+    height: 1rem;
+    vertical-align: bottom;
+    margin-right: 0.5rem;
+}
+
+
+#contact-form input,
+textarea {
+    max-width: 90%;
+    margin: 15px;
+    padding: 4px 10px;
+    border: 0px solid transparent;
+    border-bottom: 2px solid white;
+    color: #d9dcdd;
+    background: transparent;
+    width: 90%;
+    line-height: 1.6;
+    font-size: 1.05rem;
+}
+
+#contact-form button[type="submit"] {
+    background: transparent;
+    font-size: 0.95rem;
+    border: 2px solid white;
+    margin-top: 5%;
+    margin-left: 35%;
+    border-radius: 2px;
+    color: white;
+    font-family: sans-serif;
+    font-weight: 700;
+    letter-spacing: 0.046875em;
+    line-height: 1;
+    padding: 0.8em 0.8em 0.78em;
+    text-transform: uppercase;
+}
+
+#contact-form button:hover {
+    background: white;
+    color: #13386fe0;
+}
+
+#contact .social-icons li a i {
+    font-size: 1.2rem;
+    margin: 40px 10px 10px;
+    padding: 10px 14px 20px 10px;
+
+}
+
+input:focus,
+select:focus,
+textarea:focus,
+button:focus {
+    outline: none;
+}
