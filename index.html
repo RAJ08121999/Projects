@@ -3,17 +3,50 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Md Raj Portfolio</title>
+    <title>Md Raj</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    <link rel="icon" href="assets/mypic (2).jpg" type="image/x-icon">
+    <link rel="icon" href="assets/myfav.jpg" type="image/x-icon">
 </head>
 
 <body>
 
     <header id="body-header">
         <nav>
-            <ul class="horizontal-list text-center nav-menu">
+
+            <div class = "dropdown-menu text-right">
+                <div class="bars">
+                    <i class="fa-solid fa-bars"></i>
+                </div>
+                <div class ="dropdown-list nav-menu">
+                    <ul class = "no-list-style">
+                        <li >
+                            <a href="#"> Home </a>
+                        </li>
+                        <li>
+                            <a href="#about"> About </a>
+                        </li>
+                        <li>
+                            <a href="#skills"> Skills </a>
+                        </li>
+                        <li>
+                            <a href="#experience">Experience</a>
+                        </li>
+                        <li>
+                            <a href="#education">Education</a>
+                        </li>
+                        <li>
+                            <a href="#projects">Projects</a>
+                        </li>
+                        <li>
+                            <a href="#contact">Contact</a>
+                        </li>
+                    </ul>
+                </div>
+
+            </div>   
+
+            <ul class=" no-list-style horizontal-list text-center nav-menu">
                 <li>
                     <a href="#">Home</a>
                 </li>
@@ -30,33 +63,48 @@
                     <a href="#education">Education</a>
                 </li>
                 <li>
-                    <a href="#projects">Portfolio</a>
+                    <a href="#projects">Projects</a>
                 </li>
                 <li>
                     <a href="#contact">Contact</a>
                 </li>
             </ul>
+
         </nav>
+
         <div id="name-social-container">
             <div class="text-center">
                 <h1 id="my-name">
                     Md Raj
                 </h1>
             </div>
+
             <div>
-                <ul class="horizontal-list text-center social-icons">
-                    <li><a href="https://www.linkedin.com/in/md-raj-9b7443227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
-                        <i class="fa-brands fa-linkedin-in"></i>
-                    </a></li>
-                    <li><a href="https://github.com/RAJ08121999" target="_blank">
-                        <i class="fa-brands fa-github"></i>
-                    </a></li>
-                    <li><a href="https://www.instagram.com/mdraj81299/profilecard/?igsh=MXJzN2JkMjU5NXhodQ==" target="_blank">
+                <ul class=" no-list-style horizontal-list text-center social-icons">
+                    <li>
+                        <a href="https://www.linkedin.com/in/md-raj-9b7443227?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank">
+
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://github.com/RAJ08121999"         target="_blank">
+                            <i class="fa-brands fa-github"></i>
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.instagram.com/mdraj81299/profilecard/?igsh=MXJzN2JkMjU5NXhodQ==" target="_blank">
                         <i class="fa-brands fa-instagram"></i>
-                    </a></li>
-                    <li><a href="https://www.facebook.com/profile.php?id=100012762162004" target="_blank">
+                        </a>
+                    </li>
+
+                    <li>
+                        <a href="https://www.facebook.com/profile.php?id=100012762162004" target="_blank">
                         <i class="fab fa-facebook-f"></i>
-                    </a></li>
+                        </a>
+                    </li>
                     <!-- <li><a href="#">
                         <i class="fa-brands fa-twitter"></i>
                     </a></li> -->
@@ -69,7 +117,7 @@
 
         <section id="about">
             <div id="my-image">
-                <img src="assets/mypic (2).jpg" alt="my pic">
+                <img src="assets/myfav.jpg" alt="my pic">
             </div>
             <div id="about-para">
                 <p>
@@ -90,92 +138,95 @@
                 </span>
                 <span>SKILLS</span>
             </h1>
-            <div class="skills-display">
+
+            <div id="skills-container" class="skills-display">
+            
                 <div class="skill-progress">
-                    <div class="eighty-five-percent mb-blue">
+                    <div class="eighty-five-percent mb-blue" data-bar-width="85">
                         <div class="skill-name">
                             <span>C</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="sixty-five-percent mb-blue">
+                    <div class="sixty-five-percent mb-orange"data-bar-width="65">
                         <div class="skill-name">
                             <span>C++</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="seventy-percent mb-blue">
+                    <div class="seventy-percent mb-light-purple"data-bar-width="70">
                         <div class="skill-name">
                             <span>Java</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="fourty-five-percent mb-blue">
+                    <div class="fourty-five-percent mb-teal"data-bar-width="45">
                         <div class="skill-name">
                             <span>Python</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="ninty-five-percent mb-blue">
+                    <div class="ninty-five-percent mb-blue"data-bar-width="95">
                         <div class="skill-name">
                             <span>HTML</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="ninty-percent mb-blue">
+                    <div class="ninty-percent mb-light-purple"data-bar-width="90">
                         <div class="skill-name">
                             <span>CSS</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="sixty-percent mb-blue">
+                    <div class="sixty-percent mb-orange"data-bar-width="60">
                         <div class="skill-name">
                             <span>JS</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="thirty-five-percent mb-blue">
+                    <div class="thirty-five-percent mb-teal"data-bar-width="35">
                         <div class="skill-name">
                             <span>MongoDB</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="twenty-five-percent mb-blue">
+                    <div class="twenty-five-percent mb-blue"data-bar-width="25">
                         <div class="skill-name">
                             <span>Express</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="fifty-five-percent mb-blue">
+                    <div class="fifty-five-percent mb-orange"data-bar-width="55">
                         <div class="skill-name">
                             <span>React</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="thirty-percent mb-blue">
+                    <div class="thirty-percent mb-blue"data-bar-width="30">
                         <div class="skill-name">
                             <span>Node</span>
                         </div>
                     </div>
                 </div>
                 <div class="skill-progress">
-                    <div class="fourty-percent mb-blue">
+                    <div class="fourty-percent mb-light-purple"data-bar-width="40">
                         <div class="skill-name">
                             <span>XML</span>
                         </div>
                     </div>
                 </div>
             </div>
+            
         </section>
 
 
@@ -184,19 +235,43 @@
                 <span>
                     <i class="fas fa-briefcase"></i>
                 </span>
-                <span>EXPERIENCE</span>
+                <span> WORK EXPERIENCE</span>
             </h1>
             <div class="timeline">
-                <div class="timeline-box">
-                    <div class="company"><h3>Tech Mahindra</h3></div>
-                    <div class="job_profile"><h4>Technical Associate</h4></div>
-                    <div class="job_profile"><h5>23<sup>rd</sup>-Sep-2022 to 13<sup>th</sup>-Jan-2023</h5></div>
-                    <div class="job_desc"><p>Contributed to mapping India's uncharted territories, enhancing navigation experiences.
-                        Developed valuable skills in geospatial data collection, mapping technologies, and community engagement.
-                        Thrived in a dynamic environment, fostering teamwork and problem-solving.
-                    </p></div>
+
+                <div class="timeline-box left">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="assets/png-clipart-mahindra-mahindra-te.png" alt="company logo">
+                        </div>
+                        <h3 class="experience-designation m0 m-blue"> Technical Associate </h3>
+                        <h4 class="experience-company-name">Tech Mahindra</h4>
+                        <h5 class="experience-duration m0">Sep 2022- Jan 2023 </h5>
+                        <p class="experience-description text-justify">
+                            Contributed to mapping India's uncharted territories, enhancing navigation experiences.
+                            Developed valuable skills in geospatial data collection, mapping technologies, and community engagement.
+                            Thrived in a dynamic environment, fostering teamwork and problem-solving.
+                        </p>
+                    </div>
+                    
                 </div>
-                <div class="timeline-box">
+
+                <div class="timeline-box right">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="assets/sikharthy.png" alt="company logo">
+                        </div>
+                        <h3 class="experience-designation m0 m-blue">  Web Developer Intern </h3>
+                        <h4 class="experience-company-name">Sikharthy Infotech</h4>
+                        <h5 class="experience-duration m0">Aug 2024- Sep 2024 </h5>
+                        <p class="experience-description text-justify">
+                            I interned at Sikharthy Infotech Pvt Ltd as a Full Stack Web Developer, specializing in front-end development. I developed
+                            expertise in HTML, CSS, JavaScript, and front-end frameworks, creating responsive and intuitive user interfaces.
+                        </p>
+                    </div>
+                    
+                </div>
+                <!-- <div class="timeline-box">
                     <div class="company"><h3>Sikharty Infotech Pvt. Ltd.</h3></div>
                     <div class="job_profile"><h4>Web Developer Intern </h4></div>
                     <div class="job_profile"><h5>05<sup>th</sup>-Aug-2024 to 12<sup>th</sup>-Sep-2024</h5></div>
@@ -205,8 +280,23 @@
                             expertise in HTML, CSS, JavaScript, and front-end frameworks, creating responsive and intuitive user interfaces.
                         </p>
                     </div>
+                </div> -->
+                <div class="timeline-box left">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="assets/dvf.png" alt="company logo">
+                        </div>
+                        <h3 class="experience-designation m0 m-blue"> App Dev. Trainer </h3>
+                        <h4 class="experience-company-name">Dreamz Vision Finishing</h4>
+                        <h5 class="experience-duration m0">Sep 2024- Oct 2024 </h5>
+                        <p class="experience-description text-justify">
+                            I trained the students of Dreams Vision Pvt Ltd as an Android App Developer Trainer , specializing in front-end development. I developed
+                            expertise in XML, CSS, JavaScript, and front-end frameworks, creating responsive and intuitive user interfaces and for backend logics I used Java.
+                        </p>
+                    </div>
+                    
                 </div>
-                <div class="timeline-box">
+                <!-- <div class="timeline-box">
                     <div class="company"><h3>Dreams Vision Pvt. Ltd.</h3></div>
                     <div class="job_profile"><h4>Android App Developer Trainer </h4></div>
                     <div class="job_profile"><h5>25<sup>th</sup>-Sep-2024 to 31<sup>st</sup>-Oct-2024</h5></div>
@@ -215,8 +305,23 @@
                             expertise in XML, CSS, JavaScript, and front-end frameworks, creating responsive and intuitive user interfaces and for backend logics I used Java.
                         </p>
                     </div>
+                </div> -->
+                <div class="timeline-box right">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <img src="assets/ardent.png" alt="company logo">
+                        </div>
+                        <h3 class="experience-designation m0 m-blue"> Trainee </h3>
+                        <h4 class="experience-company-name">Ardent Compu. Pvt. Ltd.</h4>
+                        <h5 class="experience-duration m0">Mar 2024- Mar 2024 </h5>
+                        <p class="experience-description text-justify">
+                            I trained at Ardent Computech Pvt Ltd as an Ethical Hacking Trainee , specializing in Penetration Testing. I learned and 
+                            expertise in the basics of Penetration Testing ,Brute Force ,System Scanning , and Network Safety Protocols etc.
+                        </p>
+                    </div>
+                    
                 </div>
-                <div class="timeline-box">
+                <!-- <div class="timeline-box">
                     <div class="company"><h3>Ardent Computech Pvt. Ltd.</h3></div>
                     <div class="job_profile"><h4>Ethical Hacking Training</h4></div>
                     <div class="job_profile"><h5>11<sup>th</sup>-Mar-2024 to 16<sup>th</sup>-Mar-2024</h5></div>
@@ -225,10 +330,12 @@
                             expertise in the basics of Penetration Testing ,Brute Force ,System Scanning , and Network Safety Protocols etc.
                         </p>
                     </div>
-                </div>
-                <div class="timeline-divider">
+                </div> -->
+                <div id="timeline-divider">
                     <div class="timeline-traveller">
-                        <i class="fas fa-plane"></i>
+                        <div>
+                            <i class="fas fa-plane"></i>
+                        </div>
                     </div>
                 </div>
 
@@ -244,14 +351,96 @@
                 <span>EDUCATION</span>
             </h1>
             <div class="timeline">
-                <div class="timeline-box">
-                    <div class="company"><h2>Bachelor of Technology</h2></div>
+
+                <div class="timeline-box left">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="experience-designation m0 m-blue">
+                            Bachelor of Technology
+                        </h3>
+                        <h4 class="experience-company-name">
+                            Maulana Abul Kalam Azad University of Technology
+                        </h4>
+                        <h4 class="experience-company-name">
+                            Computer Science & Engineering
+                        </h4>
+                        <h5 class="experience-duration m0"> Jul 2022 - Jul 2025</h5>
+                        <p class="experience-description text Justify">
+                            SGPA : 7.72(till 6<sup>th</sup> sem)
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-box right">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="experience-designation m0 m-blue">
+                            Diploma in Engineering
+                        </h3>
+                        <h4 class="experience-company-name">
+                            West Bengal State Council of Technical & Vocational Education & Skill development
+                        </h4>
+                        <h4 class="experience-company-name">
+                            Computer Science & Technology
+                        </h4>
+                        <h5 class="experience-duration m0"> Jul 2019 - Jul 2022</h5>
+                        <p class="experience-description text Justify">
+                            CGPA : 8.8 / 86.6% 
+                        </p>
+                    </div>
+                </div>
+
+                <div class="timeline-box left">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="experience-designation m0 m-blue">
+                            Higher Secondary(10+2)
+                        </h3>
+                        <h4 class="experience-company-name">
+                            West Bengal Council of Higher Secondary Education
+                        </h4>
+                        <h4 class="experience-company-name">
+                            Science(PCMB)
+                        </h4>
+                        <h5 class="experience-duration m0">Apr 2017 - Jun 2019</h5>
+                        <p class="experience-description text Justify">
+                            71.4%
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-box left">
+                    <div class="timeline-container">
+                        <div class="timeline-logo">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h3 class="experience-designation m0 m-blue">
+                            Secondary(10<sup>th</sup>)
+                        </h3>
+                        <h4 class="experience-company-name">
+                            West Bengal Board of Secondary Education
+                        </h4>
+                        <h4 class="experience-company-name">
+                            General
+                        </h4>
+                        <h5 class="experience-duration m0"> Jan 2016 - Mar 2017</h5>
+                        <p class="experience-description text Justify">
+                            57.14%
+                        </p>
+                    </div>
+                </div>
+                    <!-- <div class="company"><h2>Bachelor of Technology</h2></div>
                     <div class="company"><h3>Maulana Abul Kalam Azad University of Technology</h3></div>
                     <div class="job_profile"><h4>Computer Science & Engg.</h4></div>
                     <div class="job_profile"><h5>Jul-2022 to Jul-2025</h5></div>
                     <div class="job_desc"><center><h3>SGPA:7.72 </h3> <p>(till 6th Sem)</p></center></div>
-                </div>
-                <div class="timeline-box">
+                </div> -->
+                <!-- <div class="timeline-box">
                     <div class="company"><h2>Diploma in Engg.</h2></div>
                     <div class="company"><h3>West Bengal State Council Of Technical & Vocational Education & Skill development</h3></div>
                     <div class="job_profile"><h4>Computer Science and Technology </h4></div>
@@ -276,18 +465,24 @@
                     <div class="timeline-traveller">
                         <i class="fas fa-plane"></i>
                     </div>
+                </div> -->
+                <div id="timeline-divider">
+                    <div class="timeline-traveller">
+                        <div>
+                            <i class="fas fa-plane"></i>
+                        </div>
+                    </div>
                 </div>
-
             </div>
         </section>
 
         
         <section id="projects">
-            <h1 class="section-heading mb75px">
+            <h1 class="section-heading mb50px">
                 <span>
                     <i class="fas fa-th-list"></i>
                 </span>
-                <span>Portfolio</span>
+                <span>PROJECTS</span>
             </h1>
             <div class="container">
                 <div class="project_container">
@@ -343,13 +538,12 @@
             </div>
         </section>
         
-
         <section id="contact">
-            <h1 class="section-heading mb75px">
+            <h1 class="section-heading mb50px">
                 <span>
                     <i class="far fa-address-card"></i>
                 </span>
-                <span> Contact </span>
+                <span> CONTACT </span>
             </h1>
             <div id="contact-container">
 
@@ -411,11 +605,6 @@
                         </a>
                     </li>
 
-                    <!-- <li>
-                        <a href="https://www.quora.com/profile/Manisha-Khattar" target="_blank">
-                            <i class="fab fa-quora"></i>
-                        </a>
-                    </li> -->
                 </ul>
             </div>
         </section>
@@ -425,6 +614,7 @@
     <footer>
         <center><span>Developed by Md Raj &copy; 2024 Md Raj All Rights Reserved</span></center>
     </footer>
+    <script src="script.js"></script>
     
 </body>
 </html>
